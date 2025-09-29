@@ -32,7 +32,7 @@
         <section class="border border-gray-400 rounded-b-lg mt-8 p-5">
           <!-- card content -->
           <div class="mb-5">
-            <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+            <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
             <p>
               Enjoy easy and convenient financial services with us. Cashout
               charge is low and
@@ -40,33 +40,76 @@
           </div>
           <!-- card container -->
           <div class="grid grid-cols-3 gap-2">
-            <div class="border border-gray-500 p-4 rounded-2xl">
-              <img class="text-center w-6" src="../assets/wallet1.png" alt="" />
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+              <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="" />
               <p class="text-center">Add Money</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl">
-              <img class="text-center w-6" src="../assets/send1.png" alt="" />
-              <p class="text-center">Cashout</p>
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+              <img class="w-8 mx-auto" src="../assets/send1.png" alt="" />
+              <p class="text-center">Cash out</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl">
-              <img class="text-center w-6" src="../assets/money1.png" alt="" />
-              <p class="text-center">Transfer Money</p>
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+              <img class="w-8 mx-auto" src="../assets/money1.png" alt="" />
+              <p class="text-center">Transfer</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl">
-              <img class="text-center w-6" src="../assets/bonus1.png" alt="" />
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+              <img class="w-8 mx-auto" src="../assets/bonus1.png" alt="" />
               <p class="text-center">Get Bonus</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl">
-              <img class="text-center w-6" src="../assets/purse1.png" alt="" />
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+              <img class="w-8 mx-auto" src="../assets/purse1.png" alt="" />
               <p class="text-center">Pay Bill</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl">
+            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
               <img
-                class="text-center w-6"
+                class="w-8 mx-auto"
                 src="../assets/transaction1.png"
                 alt=""
               />
               <p class="text-center">Transactions</p>
+            </div>
+          </div>
+        </section>
+        <!-- add money section -->
+        <section class="mt-8">
+          <h2 class="ml-8">Add Money</h2>
+          <div class="min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <legend>Select A Bank</legend>
+                    <select class="select">
+                      <option disabled selected>Select Your Bank</option>
+                      <option value="Islami Bank">Islami Bank</option>
+                      <option value="Prime Bank">Prime Bank</option>
+                      <option value="Sonali Bank">Sonali Bank</option>
+                      <option value="City Bank">City Bank</option>
+                      <option value="Bkash">Bkash</option>
+                    </select>
+                    <label class="label">Mobile Number</label>
+                    <input
+                      id="input-number"
+                      value="01312345678"
+                      type="number"
+                      class="input"
+                      placeholder="Enter your number"
+                      required
+                    />
+                    <label class="label">4 Digit Pin</label>
+                    <input
+                      id="input-pin"
+                      value="1234"
+                      type="password"
+                      class="input"
+                      placeholder="Pin"
+                      required
+                    />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button class="btn bg-blue-600 border border-none mt-4">Add Money</button>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
         </section>
