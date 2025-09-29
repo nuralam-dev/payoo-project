@@ -20,7 +20,7 @@
             <div class="flex">
               <img src="../assets/Group.png" alt="" />
               <div>
-                <h1 class="text-3xl font-bold">$ 45000</h1>
+                <h1 class="text-3xl font-bold">$ <span id="main-balance">45000</span></h1>
                 <p class="text-lg text-gray-500">Available Balance</p>
               </div>
             </div>
@@ -79,13 +79,14 @@
                 <div class="card-body">
                   <fieldset class="fieldset">
                     <legend>Select A Bank</legend>
-                    <select class="select">
-                      <option disabled selected>Select Your Bank</option>
+                    <select class="select" required>
+                      <option>Select Your Bank</option>
                       <option value="Islami Bank">Islami Bank</option>
                       <option value="Prime Bank">Prime Bank</option>
                       <option value="Sonali Bank">Sonali Bank</option>
                       <option value="City Bank">City Bank</option>
                       <option value="Bkash">Bkash</option>
+                      
                     </select>
                     <label class="label">Mobile Number</label>
                     <input
@@ -96,17 +97,31 @@
                       placeholder="Enter your number"
                       required
                     />
+                    <label class="label">Type Your Amount</label>
+                    <input
+                      id="amount"
+                      type="number"
+                      class="input"
+                      placeholder="Type Your Amount"
+                      required
+                    />
                     <label class="label">4 Digit Pin</label>
                     <input
                       id="input-pin"
                       value="1234"
-                      type="password"
+                      type="text"
                       class="input"
                       placeholder="Pin"
                       required
                     />
+
                     <div><a class="link link-hover">Forgot password?</a></div>
-                    <button class="btn bg-blue-600 border border-none mt-4">Add Money</button>
+                    <button
+                      id="add-money"
+                      class="btn bg-blue-600 border border-none mt-4 hover:bg-blue-900"
+                    >
+                      Add Money
+                    </button>
                   </fieldset>
                 </div>
               </div>
@@ -115,5 +130,6 @@
         </section>
       </section>
     </header>
+    <script src="../script/add-money.js"></script>
   </body>
 </html>
