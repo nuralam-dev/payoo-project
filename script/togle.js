@@ -6,7 +6,7 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
   document.getElementById("cash-out").style.display = "none";
 });
 
-document.getElementById("cash-out-btn").addEventListener("click", function () {
+document.getElementById("cash-out-btn-1").addEventListener("click", function () {
   document.getElementById("cash-out").style.display = "block";
   document.getElementById("add-money").style.display = "none";
 });

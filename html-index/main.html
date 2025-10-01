@@ -42,11 +42,17 @@
           </div>
           <!-- card container -->
           <div class="grid grid-cols-3 gap-2">
-            <div id="add-money-btn" class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+            <div
+              id="add-money-btn"
+              class="border border-gray-500 p-4 rounded-2xl cursor-pointer"
+            >
               <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="" />
               <p class="text-center">Add Money</p>
             </div>
-            <div id="cash-out-btn" class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+            <div
+              id="cash-out-btn-1"
+              class="border border-gray-500 p-4 rounded-2xl cursor-pointer"
+            >
               <img class="w-8 mx-auto" src="../assets/send1.png" alt="" />
               <p class="text-center">Cash out</p>
             </div>
@@ -102,6 +108,7 @@
                     <input
                       id="amount"
                       type="number"
+                      value="0"
                       class="input"
                       placeholder="Type Your Amount"
                       required
@@ -118,7 +125,7 @@
 
                     <div><a class="link link-hover">Forgot password?</a></div>
                     <button
-                      id="add-money"
+                      id="add-money-click"
                       class="btn bg-blue-600 border border-none mt-4 hover:bg-blue-900"
                     >
                       Add Money
@@ -145,20 +152,22 @@
                         id="input-number"
                         type="number"
                         class="input"
+                        value="01316702878"
                         placeholder="Enter Agent number"
                         required
                       />
                       <label class="label">Type Your Amount</label>
                       <input
-                        id="amount"
+                        id="cash-out-amount"
                         type="number"
                         class="input"
+                        value="0"
                         placeholder="Type Your Amount"
                         required
                       />
                       <label class="label">4 Digit Pin</label>
                       <input
-                        id="input-pin"
+                        id="cash-out-pin"
                         value="1234"
                         type="text"
                         class="input"
@@ -168,7 +177,7 @@
 
                       <div><a class="link link-hover">Forgot password?</a></div>
                       <button
-                        id="add-money"
+                        id="cash-out-btn"
                         class="btn bg-blue-600 border border-none mt-4 hover:bg-blue-900"
                       >
                         Cash Out
@@ -182,6 +191,7 @@
         </section>
       </section>
     </header>
+    <script src="../script/cashout.js"></script>
     <script src="../script/add-money.js"></script>
     <script src="../script/togle.js"></script>
   </body>
