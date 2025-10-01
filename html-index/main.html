@@ -20,7 +20,9 @@
             <div class="flex">
               <img src="../assets/Group.png" alt="" />
               <div>
-                <h1 class="text-3xl font-bold">$ <span id="main-balance">45000</span></h1>
+                <h1 class="text-3xl font-bold">
+                  $ <span id="main-balance">45000</span>
+                </h1>
                 <p class="text-lg text-gray-500">Available Balance</p>
               </div>
             </div>
@@ -40,11 +42,11 @@
           </div>
           <!-- card container -->
           <div class="grid grid-cols-3 gap-2">
-            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+            <div id="add-money-btn" class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
               <img class="w-8 mx-auto" src="../assets/wallet1.png" alt="" />
               <p class="text-center">Add Money</p>
             </div>
-            <div class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
+            <div id="cash-out-btn" class="border border-gray-500 p-4 rounded-2xl cursor-pointer">
               <img class="w-8 mx-auto" src="../assets/send1.png" alt="" />
               <p class="text-center">Cash out</p>
             </div>
@@ -71,7 +73,7 @@
           </div>
         </section>
         <!-- add money section -->
-        <section class="mt-8">
+        <section id="add-money" class="mt-8">
           <h2 class="ml-8">Add Money</h2>
           <div class="min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -86,7 +88,6 @@
                       <option value="Sonali Bank">Sonali Bank</option>
                       <option value="City Bank">City Bank</option>
                       <option value="Bkash">Bkash</option>
-                      
                     </select>
                     <label class="label">Mobile Number</label>
                     <input
@@ -128,8 +129,60 @@
             </div>
           </div>
         </section>
+        <!-- cash out section -->
+        <section>
+          <section id="cash-out" class="mt-8">
+            <h2 class="ml-8">Cash Out</h2>
+            <div class="min-h-screen">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    <fieldset class="fieldset">
+                      <label class="label">Agent Number</label>
+                      <input
+                        id="input-number"
+                        type="number"
+                        class="input"
+                        placeholder="Enter Agent number"
+                        required
+                      />
+                      <label class="label">Type Your Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        class="input"
+                        placeholder="Type Your Amount"
+                        required
+                      />
+                      <label class="label">4 Digit Pin</label>
+                      <input
+                        id="input-pin"
+                        value="1234"
+                        type="text"
+                        class="input"
+                        placeholder="Pin"
+                        required
+                      />
+
+                      <div><a class="link link-hover">Forgot password?</a></div>
+                      <button
+                        id="add-money"
+                        class="btn bg-blue-600 border border-none mt-4 hover:bg-blue-900"
+                      >
+                        Cash Out
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
       </section>
     </header>
     <script src="../script/add-money.js"></script>
+    <script src="../script/togle.js"></script>
   </body>
 </html>
